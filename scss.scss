@@ -1,0 +1,46 @@
+$term_color : black;
+$term_text_color : white;
+$term_margin : 25px;
+$term_width: 500px;
+
+pre {
+    background-color: $term_color;
+    margin: $term_margin;
+    width: $term_width;
+
+    code {
+        color: $term_text_color;
+    }
+}
+
+%comp {
+    span.var {
+        color: red;
+    }
+
+    span.prop {
+        color: lightblue;
+    }
+
+    span.class {
+        color: orange;
+    }
+
+    span.instance {
+        color: magenta;
+    }
+
+    span.primitive {
+        color: blue;
+    }
+}
+
+.python {
+    @extend %comp;
+    color: green;
+}
+
+.scss {
+    @extend %comp;
+    color: white;
+}

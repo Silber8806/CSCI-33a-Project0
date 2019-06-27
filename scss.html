@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
+      	<link rel="stylesheet" href="scss.css">
 
     <title>Project0 - Home Page </title>
   </head>
@@ -36,6 +37,101 @@
 
 
       <div id="scss-example" class="container">
+        <h1> SCSS Example </h1>
+          <p>
+              We will use SASS to compile an SCSS file.  The SCSS File will be present on this screen.
+          The compiled output will be presented below that.  We will use the compiled CSS within this webpage
+          to highlight some basic things within the code.
+          </p>
+
+          <h2> SCSS Code </h2>
+
+          <pre>
+            <code class="scss">
+                <span class="var">$term_color</span> : <span class="primitive"> black</span>;
+                <span class="var">$term_text_color</span> : <span class="primitive">white</span>;
+                <span class="var">$term_margin</span> : <span class="primitive">25px</span>;
+                <span class="var">$term_width</span>: <span class="primitive">500px</span>;
+
+                <span class="instance">pre</span> {
+                    <span class="prop">background-color</span>:<span class="var">$term_color</span>;
+                    <span class="prop">margin</span>:<span class="var">$term_margin</span>;
+                    <span class="prop">width</span>:<span class="var">$term_width</span>;
+
+                    <span class="instance">code</span> {
+                    <span class="prop">color</span>: <span class="var">$term_text_color</span>;
+                    }
+                }
+
+                <span class="class">%comp</span> {
+                    <span class="instance">span.var</span> {
+                        <span class="prop">color</span>: <span class="primitive">red</span>;
+                    }
+
+                    <span class="instance">span.prop</span> {
+                        <span class="prop">color</span>: <span class="primitive">lightblue</span>;
+                    }
+
+                    <span class="instance">span.class</span> {
+                        <span class="prop">color</span>: <span class="primitive">orange</span>;
+                    }
+
+                    <span class="instance">span.instance</span> {
+                        <span class="prop">color</span>: <span class="primitive">magenta</span>;
+                    }
+
+                    <span class="instance">span.primitive</span> {
+                        <span class="prop">color</span>: <span class="primitive">blue</span>;
+                    }
+                }
+
+                <span class="instance">.python</span> {
+                @extend <span class="class">%comp</span>;
+                    <span class="prop">color</span>: <span class="primitive">green</span>;
+                }
+
+                <span class="instance">.scss</span> {
+                @extend <span class="class">%comp</span>;
+                    <span class="prop">color</span>: <span class="primitive">white</span>;
+                }
+          </code>
+          </pre>
+
+
+          <h2> Compile CSS Code </h2>
+
+          <pre>
+             <code class="scss">
+                 <span class="instance">pre</span> {
+                  <span class="prop">background-color</span>: <span class="primitive">black</span>;
+                  <span class="prop">margin</span>: <span class="primitive">25px</span>;
+                  <span class="prop">width</span>: <span class="primitive">500px</span>; }
+                    <span class="instance">pre code</span> {
+                     <span class="prop">color</span>: <span class="primitive">white</span>; }
+
+                <span class="instance">.python span.var</span>, <span class="instance">.scss span.var</span> {
+                  <span class="prop">color</span>: <span class="primitive">red</span>; }
+                <span class="instance">.python span.prop</span>, <span class="instance">.scss span.prop</span> {
+                  <span class="prop">color</span>: <span class="primitive">blue</span>; }
+                <span class="instance">.python span.class</span>, <span class="instance">.scss span.class</span> {
+                  <span class="prop">color</span>: <span class="primitive">purple</span>; }
+                <span class="instance">.python span.instance</span>, <span class="instance">.scss span.instance</span> {
+                  <span class="prop">color</span>: <span class="primitive">magenta</span>; }
+
+                <span class="instance">.python </span> {
+                  <span class="prop">color</span>: <span class="primitive">green</span>; }
+
+                <span class="instance">.scss</span> {
+                  <span class="prop">color</span>: <span class="primitive">white</span>; }
+
+                /*# sourceMappingURL=scss.css.map */
+
+          </code>
+          </pre>
+
+          <h2> Python Code </h2>
+
+          <p> We can extend the above to work on python code as well!</p>
 
       </div>
 

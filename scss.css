@@ -1,0 +1,25 @@
+pre {
+  background-color: black;
+  margin: 25px;
+  width: 500px; }
+  pre code {
+    color: white; }
+
+.python span.var, .scss span.var {
+  color: red; }
+.python span.prop, .scss span.prop {
+  color: lightblue; }
+.python span.class, .scss span.class {
+  color: orange; }
+.python span.instance, .scss span.instance {
+  color: magenta; }
+.python span.primitive, .scss span.primitive {
+  color: blue; }
+
+.python {
+  color: green; }
+
+.scss {
+  color: white; }
+
+/*# sourceMappingURL=scss.css.map */
