@@ -14,4 +14,11 @@ Some notes about each section:
 
 Think the above is good enough explanation.  Sorry I'm not that original regarding assignments.
 
+Content:
+Pokemon pictures are based on this: https://www.pastemagazine.com/articles/2017/02/the-top-100-pokemon-of-all-time.html
+Computer/Cellphone picture: Googled and found at these urls:
+Computer Picture: https://www.cio.com/article/3018771/top-10-millennial-stories-of-2015.html
+Cellphone Picture: https://www.frugal-millennial.com/how-to-get-the-most-cash-for-your-old-cell-phone/.
+
 Chris Kottmyer
+
