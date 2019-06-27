@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="styles.css">
     <title>My Webpage</title>
   </head>
   <body>
@@ -23,15 +23,121 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HTML & CSS Examples</a>
             <div class="dropdown-menu" aria-labelledby="dropdown03">
-              <a class="dropdown-item" href="basic.html">Basic HTML Examples </a>
+                <a class="dropdown-item" href="basic.html">Basic HTML Examples </a>
               <a class="dropdown-item" href="media.html">Media Query Examples </a>
               <a class="dropdown-item" href="bootstrap.html">Bootstrap Examples </a>
+				<a class="dropdown-item" href="scss.html">SCSS Examples </a>
             </div>
           </li>
         </ul>
       </div>
     </nav>
 
+    <div class="container">
+
+        <h1> Bootstrap4!</h1>
+
+        <p> CSCI-S33a includes a section on Bootstrap 4.  The below are examples of bootstrap 4 that are slight modications
+        of the examples on the main tutorial page.  I show how to create 2-columns, staggered 3 columns and 3-columns with Bootstrap
+        4 cards attached.</p>
+
+        <div class="example">
+
+            <h2> Two-Column row </h2>
+
+            <p> You can add two divs within a row with col-sm and it will automatically split
+            the container into 2.  If there are 3 divs each div would take up 1/3rd of a container.</p>
+
+           <div class="container-fluid" id="example1">
+              <div class="row">
+                <div class="col-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio.
+                </div>
+                <div class="col-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio.
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="example">
+         <h2> 3-Columns Staggered </h2>
+
+        <p> An awesome example online shows how with the addition of justify-content-[start|center|end] class
+       to a row div, you can change how content within a row justifies itself.</p>
+
+            <div class="container" id="example2">
+              <div class="row justify-content-start">
+                <div class="col-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio.
+                </div>
+                <div class="col-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio.
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio.
+                </div>
+                <div class="col-4">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio.
+                </div>
+              </div>
+              <div class="row justify-content-end">
+                <div class="col-4">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio.
+                </div>
+                <div class="col-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio.
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="example">
+            <h2> 3-Column Container with Cards </h2>
+
+            <p> I just take the concept from above and change the content to cards a type of bootstrap component.
+            The cards just link to this example.</p>
+
+           <div class="container-fluid" id="example3">
+              <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/computer.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Computers</h5>
+                        <p class="card-text">This is a really cool text about computers!</p>
+                        <a href="#example3" class="btn btn-primary">Goes Nowhere!</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/cellphone.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Cellphones</h5>
+                        <p class="card-text">This is a really cool text about cellphones!</p>
+                        <a href="#example3" class="btn btn-primary">Goes Nowhere!</a>
+                      </div>
+                    </div>
+                  </div>
+                 <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="images/computer.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">More Computers</h5>
+                        <p class="card-text">This is a really cool text about computers!</p>
+                        <a href="#example3" class="btn btn-primary">Goes Nowhere!</a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
