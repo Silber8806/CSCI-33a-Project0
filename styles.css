@@ -1,0 +1,53 @@
+#favorite {
+    font-weight: bolder;
+    background-color: yellow;
+    color: red;
+    border-color: blue;
+    outline: purple;
+}
+
+.awesome {
+    font-style: italic;
+    background-color: magenta;
+}
+
+article ol > li {
+    background-color: lightblue;
+}
+
+article ul > li {
+    background-color: pink;
+}
+
+article ul > li:hover {
+    background-color: black;
+    color: white;
+}
+
+table td {
+    border: 1px solid;
+}
+
+table img {
+    height: 250px;
+    padding: 25px;
+}
+
+table {
+    text-align: center;
+}
+
+table th {
+    border: 2px solid;
+    background-color: silver;
+    color: darkblue;
+}
+
+tr:nth-child(even) {
+  background-color: lightblue;
+}
+
+tr:nth-child(odd) {
+    background-color: grey;
+    color: white;
+}

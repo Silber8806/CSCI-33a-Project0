@@ -7,8 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>My Webpage</title>
+    <link rel="stylesheet" href="styles.css" >
+    <title> Project0 - The Basics </title>
   </head>
   <body>
 
@@ -43,18 +43,22 @@
                   This is an example of an ordered list.  Note you can add unordered and ordered lists to this ordered list.
               </p>
 
+              <p>
+                  I applied CSS selectors for this including ones for id, class, hover and for children.
+              </p>
+
 
               <ol>
                 <li>
                     Pizza
                     <ul>
-                        <li>
+                        <li id="favorite">
                             Pepperoni
                         </li>
                         <li>
                             3-Cheese
                         </li>
-                        <li>
+                        <li class="awesome">
                             Carna-trio
                         </li>
                     </ul>
@@ -62,7 +66,7 @@
                  <li>
                     Spagetti
                     <ul>
-                        <li>
+                        <li class="awesome">
                             Marina Sauce
                         </li>
                         <li>
@@ -81,6 +85,8 @@
             <h2> Unordered List </h2>
 
               <p> This is an unordered list, note you can add ordered lists to it!</p>
+
+              <p> I added cool nth-child selectors so that even and odd rows are a certain color.</p>
 
               <ul>
                   <li>

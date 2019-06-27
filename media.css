@@ -1,0 +1,21 @@
+/* Set the background color of body to tan */
+body {
+  background-image: url("images/computer.jpg");
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("images/cellphone.jpg");
+    color: orange;
+  }
+}
+
+#question {
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    margin: 25%;
+    text-align: center;
+    border: 5px solid red;
+}
